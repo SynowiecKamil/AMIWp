@@ -1,1 +1,33 @@
-<p>to-do-list works!</p>
+<div>
+  <div class = "container">
+    <div>
+      Miejsce na dodawanie tekstow
+      <input [(ngModel)]="newTask">
+      <button (click)="add()">Dodaj</button>
+    </div>
+  </div>
+  <div class = "container">
+    <div>
+      Lista zadan
+      <ul>
+        <li *ngFor="let task of tasksList">
+          {{task}}
+          <button (click)="remove(task)">Usuń</button>
+          <button (click)="done(task)">Zrobione</button>
+        </li>
+      </ul>
+    </div>
+
+
+    <div>
+      Zadań wykonanych {{tasksDone.length}}
+      <ul>
+        <li *ngFor="let tDone of tasksDone">
+          {{tDone}}
+
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</div>
