@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1, 
+  "version": 1,
   "newProjectRoot": "projects",
   "projects": {
     "AMIW": {
@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AMIW"
+    }
+  },
+  "defaultProject": "AMIW",
+  "cli": {
+    "analytics": "7e8ec720-26b6-4f17-a8a8-42f4a648a8f6"
+  }
 }
