@@ -1,50 +1,10 @@
 <app-header></app-header>
 <app-navbar></app-navbar>
+
 <section id="main" class="main" fxLayout='row'>
   <section class="content" fxFlex>
-    <app-body></app-body>
+    <app-body> </app-body>
   </section>
 </section>
+
 <app-footer></app-footer>
-
-
-  <nav class="navbar navbar-dark bg-dark">
-    <span style="font-size: 48px; color: salmon;">
-      <i class="fas fa-code"></i>
-    </span>
-    <a class="navbar-brand" href="#">AMIW Projekt</a>
-    <ul class="nav">
-      <li class="nav-item">
-        <a class="nav-link active" href="/toDoList">Lista zadań</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="/table">Tabela</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
-  </nav>
-
-
-    <div class="leftcolumn">
-      <mat-slider min="1" max="100" step="1" value="1"></mat-slider>
-    <router-outlet></router-outlet>
-    </div>
-
-    <div class="rightcolumn">
-      <div class="card">
-        <h2>About Me</h2>
-        <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
-      </div>
-      <div class="card">
-        <h3>Popular Post</h3>
-      </div>
-      <div class="card">
-        <h3>Follow Me</h3>
-        <p>Some text..</p>
-      </div>
-    </div>
