@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { RemoveDialogComponent } from '../remove-dialog/remove-dialog.component';
+import { DialogService } from '../shared/dialog.service';
 
 @Component({
   selector: 'app-to-do-list',
@@ -11,7 +14,7 @@ export class ToDoListComponent implements OnInit {
   tasksList: Array<string> = [];
   tasksDone: Array<string> = [];
 
-  constructor() { }
+  constructor(private dialogService: DialogService) { }
 
   ngOnInit(): void {
   }
@@ -22,12 +25,18 @@ export class ToDoListComponent implements OnInit {
     this.newTask = '';
   }
   remove(task: string) {
-  this.tasksList = this.tasksList.filter(e => e !== task);
+
+    this.dialogService.openConfirmDialog()
+  .afterClosed().subscribe(res => {
+      if (res) {
+        this.tasksList = this.tasksList.filter(e => e !== task);
+      }
+    });
   }
 
   done(task: string) {
     this.tasksDone.push(task);
-    this.remove(task);
+    this.tasksList = this.tasksList.filter(e => e !== task);
   }
 
 }

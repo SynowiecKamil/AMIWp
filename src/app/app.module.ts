@@ -5,10 +5,12 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from './shared/shared.module';
 import { HomeModule } from './home/home.module';
+import { RemoveDialogComponent } from './remove-dialog/remove-dialog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    RemoveDialogComponent,
   ],
   imports: [
     BrowserModule,
@@ -16,6 +18,9 @@ import { HomeModule } from './home/home.module';
     BrowserAnimationsModule,
     SharedModule,
     HomeModule,
+  ],
+  entryComponents: [
+    RemoveDialogComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

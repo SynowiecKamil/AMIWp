@@ -1,0 +1,13 @@
+<h1 mat-dialog-title>Potwierdzenie</h1>
+
+<mat-dialog-content>
+<p>Czy na pewno chcesz usunąć?</p>
+<p></p>
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-dialog-button [matDialogClose]="false" id="no-button" (click)="closeDialog()">Nie</button>
+  <button mat-dialog-button [matDialogClose]="true" id="yes-button">Tak</button>
+</mat-dialog-actions>
+
+
