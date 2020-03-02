@@ -3,7 +3,7 @@
     <div>
       Wpisz zadanie:
       <input [(ngModel)]="newTask">
-      <button (click)="add()">Dodaj</button>
+      <button type="button" (click)="add()" class="btn btn-outline-primary">Dodaj</button>
     </div>
   </div>
   <div class = "container">
@@ -12,8 +12,10 @@
       <ul>
         <li *ngFor="let task of tasksList">
           {{task}}
-          <button (click)="remove(task)">Usuń</button>
-          <button (click)="done(task)">Zrobione</button>
+
+          <button type="button" (click)="remove(task)" class="btn btn-primary btn-sm">Usuń</button>
+          <button type="button" (click)="done(task)" class="btn btn-secondary btn-sm">Zrobione</button>
+
         </li>
       </ul>
     </div>
