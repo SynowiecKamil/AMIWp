@@ -8,7 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BodyComponent } from './body/body.component';
 import { FooterComponent } from './footer/footer.component';
-
+import { AgmCoreModule} from '@agm/core';
 
 
 
@@ -25,7 +25,10 @@ import { FooterComponent } from './footer/footer.component';
     CommonModule,
     SharedModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDjtN3LbwfWOOpD1mqYGZcU6xNCcLHuxi8'
+    })
   ],
   exports: [
     HomeComponent

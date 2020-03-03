@@ -8,7 +8,8 @@ import { HomeModule } from './home/home.module';
 import { RemoveDialogComponent } from './remove-dialog/remove-dialog.component';
 import { TableComponent } from './table/table.component';
 import { HttpClientModule } from '@angular/common/http';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AgmCoreModule} from '@agm/core';
+
 
 
 @NgModule({
@@ -22,7 +23,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserAnimationsModule,
     SharedModule,
     HomeModule,
-    HttpClientModule
+    HttpClientModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDjtN3LbwfWOOpD1mqYGZcU6xNCcLHuxi8'
+    })
   ],
   entryComponents: [
     RemoveDialogComponent,

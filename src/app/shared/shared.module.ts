@@ -4,6 +4,7 @@ import { MatSliderModule } from '@angular/material/slider';
 import { MatDialogModule } from '@angular/material/dialog';
 
 
+
 @NgModule({
   declarations: [],
   imports: [
@@ -13,7 +14,8 @@ import { MatDialogModule } from '@angular/material/dialog';
   ],
   exports: [
     MatSliderModule,
-    MatDialogModule,
+    MatDialogModule
+
   ]
 })
 export class SharedModule { }
