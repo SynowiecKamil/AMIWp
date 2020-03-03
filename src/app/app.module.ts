@@ -8,7 +8,6 @@ import { HomeModule } from './home/home.module';
 import { RemoveDialogComponent } from './remove-dialog/remove-dialog.component';
 import { TableComponent } from './table/table.component';
 import { HttpClientModule } from '@angular/common/http';
-import { AgmCoreModule} from '@agm/core';
 
 
 
@@ -24,9 +23,6 @@ import { AgmCoreModule} from '@agm/core';
     SharedModule,
     HomeModule,
     HttpClientModule,
-    AgmCoreModule.forRoot({
-      apiKey: 'AIzaSyDjtN3LbwfWOOpD1mqYGZcU6xNCcLHuxi8'
-    })
   ],
   entryComponents: [
     RemoveDialogComponent,
