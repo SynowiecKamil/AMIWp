@@ -2,11 +2,17 @@
 
 Projekt aplikacji webowej z wykorzystaniem Angular.
 Zawiera:
+
 -podział na widok i logikę oraz moduły
+
 -zastosowanie języka stylów SASS
+
 -zastosowanie biblioteki CSS Botstrap
+
 -zastosowanie routera i nawigacji
+
 -połączenie z zewnętrznym API dostarczającym dane za pomocą serwisów
+
 -wprowadzenie okienka typu modal do potwierdzenia operacji
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.3.
